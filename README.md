@@ -50,8 +50,8 @@ ENV PORT 80
 CMD bundle exec jekyll serve --host "$HOST" --port "$PORT"
 ```
 
-- 默认主机地址："0.0.0.0"
-- 默认主机端口：80
+- 默认**主机地址**：`"0.0.0.0"`
+- 默认**主机端口**：`80`
 
 
 
@@ -89,6 +89,9 @@ docker run --name gtfo -itd -p 81:80 gtfo:1.0.0
 docker run --name gtfo -itd -p 81:8080 -e HOST="127.0.0.1" -e PORT=8080 gtfo:1.0.0
 ```
 
-主机地址：`-e HOST="127.0.0.1"`
+- 主机地址：`-e HOST="127.0.0.1"`
+- 主机端口：`-e PORT=80`
 
-主机端口：``-e PORT=80`
+
+
+**fork作者**：小沙鳄Crocodile
